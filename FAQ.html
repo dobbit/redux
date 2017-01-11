@@ -1,0 +1,1406 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>FAQ(미번역) · Redux</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-algolia/plugin-algolia.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Troubleshooting.html" />
+    
+    
+    <link rel="prev" href="docs/recipes/IsolatingSubapps.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Table of Contents</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Read Me
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction/">
+            
+                <a href="introduction/">
+            
+                    
+                    소개
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="introduction/Motivation.html">
+            
+                <a href="introduction/Motivation.html">
+            
+                    
+                    동기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="introduction/ThreePrinciples.html">
+            
+                <a href="introduction/ThreePrinciples.html">
+            
+                    
+                    3가지 원칙
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="introduction/PriorArt.html">
+            
+                <a href="introduction/PriorArt.html">
+            
+                    
+                    기존 기술들
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="introduction/Ecosystem.html">
+            
+                <a href="introduction/Ecosystem.html">
+            
+                    
+                    생태계
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="introduction/Examples.html">
+            
+                <a href="introduction/Examples.html">
+            
+                    
+                    예시
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="basics/">
+            
+                <a href="basics/">
+            
+                    
+                    기초
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="basics/Actions.html">
+            
+                <a href="basics/Actions.html">
+            
+                    
+                    액션
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="basics/Reducers.html">
+            
+                <a href="basics/Reducers.html">
+            
+                    
+                    리듀서
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="basics/Store.html">
+            
+                <a href="basics/Store.html">
+            
+                    
+                    스토어
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="basics/DataFlow.html">
+            
+                <a href="basics/DataFlow.html">
+            
+                    
+                    데이터 흐름
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="basics/UsageWithReact.html">
+            
+                <a href="basics/UsageWithReact.html">
+            
+                    
+                    React와 함께 사용하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="basics/ExampleTodoList.html">
+            
+                <a href="basics/ExampleTodoList.html">
+            
+                    
+                    예시: Todo List
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="advanced/">
+            
+                <a href="advanced/">
+            
+                    
+                    심화
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="advanced/AsyncActions.html">
+            
+                <a href="advanced/AsyncActions.html">
+            
+                    
+                    비동기 액션
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="advanced/AsyncFlow.html">
+            
+                <a href="advanced/AsyncFlow.html">
+            
+                    
+                    비동기 흐름
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="advanced/Middleware.html">
+            
+                <a href="advanced/Middleware.html">
+            
+                    
+                    미들웨어
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="advanced/UsageWithReactRouter.html">
+            
+                <a href="advanced/UsageWithReactRouter.html">
+            
+                    
+                    React Router와 함께 사용하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="advanced/ExampleRedditAPI.html">
+            
+                <a href="advanced/ExampleRedditAPI.html">
+            
+                    
+                    예시: Reddit API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" >
+            
+                <span>
+            
+                    
+                    다음 단계
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="recipes/">
+            
+                <a href="recipes/">
+            
+                    
+                    레시피
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="recipes/MigratingToRedux.html">
+            
+                <a href="recipes/MigratingToRedux.html">
+            
+                    
+                    Redux로 마이그레이션
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="recipes/UsingObjectSpreadOperator.html">
+            
+                <a href="recipes/UsingObjectSpreadOperator.html">
+            
+                    
+                    객체 확산 연산자 사용하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="recipes/ReducingBoilerplate.html">
+            
+                <a href="recipes/ReducingBoilerplate.html">
+            
+                    
+                    보일러플레이트 줄이기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="recipes/ServerRendering.html">
+            
+                <a href="recipes/ServerRendering.html">
+            
+                    
+                    서버 렌더링(미번역)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="recipes/WritingTests.html">
+            
+                <a href="recipes/WritingTests.html">
+            
+                    
+                    테스트 작성(미번역)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="recipes/ComputingDerivedData.html">
+            
+                <a href="recipes/ComputingDerivedData.html">
+            
+                    
+                    파생된 데이터 다루기(미번역)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="recipes/ImplementingUndoHistory.html">
+            
+                <a href="recipes/ImplementingUndoHistory.html">
+            
+                    
+                    실행취소 구현하기(미번역)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="docs/recipes/IsolatingSubapps.md">
+            
+                <span>
+            
+                    
+                    서브앱 분리하기(미번역)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                    FAQ(미번역)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Troubleshooting.html">
+            
+                <a href="Troubleshooting.html">
+            
+                    
+                    문제해결(미번역)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Glossary.html">
+            
+                <a href="Glossary.html">
+            
+                    
+                    용어사전
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="api/">
+            
+                <a href="api/">
+            
+                    
+                    API 레퍼런스
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="api/createStore.html">
+            
+                <a href="api/createStore.html">
+            
+                    
+                    createStore(미번역)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="api/Store.html">
+            
+                <a href="api/Store.html">
+            
+                    
+                    Store(미번역)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="api/combineReducers.html">
+            
+                <a href="api/combineReducers.html">
+            
+                    
+                    combineReducers(미번역)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="api/applyMiddleware.html">
+            
+                <a href="api/applyMiddleware.html">
+            
+                    
+                    applyMiddleware(미번역)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="api/bindActionCreators.html">
+            
+                <a href="api/bindActionCreators.html">
+            
+                    
+                    bindActionCreators(미번역)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="api/compose.html">
+            
+                <a href="api/compose.html">
+            
+                    
+                    compose(미번역)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="CHANGELOG.html">
+            
+                <a href="CHANGELOG.html">
+            
+                    
+                    변경 기록
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="PATRONS.html">
+            
+                <a href="PATRONS.html">
+            
+                    
+                    후원자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Feedback.html">
+            
+                <a href="Feedback.html">
+            
+                    
+                    피드백
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBook에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >FAQ(미번역)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="redux-faq">Redux FAQ</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><strong>General</strong><ul>
+<li><a href="#general-when-to-use">When should I use Redux?</a> </li>
+<li><a href="#general-only-react">Can Redux only be used with React?</a> </li>
+<li><a href="#general-build-tools">Do I need to have a particular build tool to use Redux?</a> </li>
+</ul>
+</li>
+<li><strong>Reducers</strong><ul>
+<li><a href="#reducers-share-state">How do I share state between two reducers? Do I have to use combineReducers?</a> </li>
+<li><a href="#reducers-use-switch">Do I have to use the switch statement to handle actions?</a> </li>
+</ul>
+</li>
+<li><strong>Organizing State</strong><ul>
+<li><a href="#organizing-state-only-redux-state">Do I have to put all my state into Redux? Should I ever use React&#x2019;s setState()?</a> </li>
+<li><a href="#organizing-state-non-serializable">Can I put functions, promises, or other non-serializable items in my store state?</a> </li>
+<li><a href="#organizing-state-nested-data">How do I organize nested or duplicate data in my state?</a> </li>
+</ul>
+</li>
+<li><strong>Store Setup</strong><ul>
+<li><a href="#store-setup-multiple-stores">Can or should I create multiple stores? Can I import my store directly, and use it in components myself?</a> </li>
+<li><a href="#store-setup-middleware-chains">Is it OK to have more than one middleware chain in my store enhancer? What is the difference between next and dispatch in a middleware function?</a> </li>
+<li><a href="#store-setup-subscriptions">How do I subscribe to only a portion of the state? Can I get the dispatched action as part of the subscription?</a> </li>
+</ul>
+</li>
+<li><strong>Actions</strong><ul>
+<li><a href="#actions-string-constants">Why should type be a string, or at least serializable? Why should my action types be constants?</a> </li>
+<li><a href="#actions-reducer-mappings">Is there always a one-to-one mapping between reducers and actions?</a></li>
+<li><a href="#actions-side-effects">How can I represent &#x201C;side effects&#x201D; such as AJAX calls? Why do we need things like &#x201C;action creators&#x201D;, &#x201C;thunks&#x201D;, and &#x201C;middleware&#x201D; to do async behavior?</a> </li>
+<li><a href="#actions-multiple-actions">Should I dispatch multiple actions in a row from one action creator?</a> </li>
+</ul>
+</li>
+<li><strong>Code Structure</strong>  <ul>
+<li><a href="#structure-file-structure">What should my file structure look like? How should I group my action creators and reducers in my project? Where should my selectors go?</a></li>
+<li><a href="#structure-business-logic">How should I split my logic between reducers and action creators? Where should my &#x201C;business logic&#x201D; go?</a> </li>
+</ul>
+</li>
+<li><strong>Performance</strong><ul>
+<li><a href="#performance-scaling">How well does Redux &#x201C;scale&#x201D; in terms of performance and architecture?</a></li>
+<li><a href="#performance-all-reducers">Won&#x2019;t calling &#x201C;all my reducers&#x201D; for each action be slow?</a></li>
+<li><a href="#performance-clone-state">Do I have to deep-clone my state in a reducer? Isn&#x2019;t copying my state going to be slow?</a></li>
+<li><a href="#performance-update-events">How can I reduce the number of store update events?</a></li>
+<li><a href="#performance-state-memory">Will having &#x201C;one state tree&#x201D; cause memory problems? Will dispatching many actions take up memory?</a></li>
+</ul>
+</li>
+<li><strong>React Redux</strong><ul>
+<li><a href="#react-not-rerendering">Why isn&#x2019;t my component re-rendering, or my mapStateToProps running?</a></li>
+<li><a href="#react-rendering-too-often">Why is my component re-rendering too often?</a></li>
+<li><a href="#react-mapstate-speed">How can I speed up my mapStateToProps?</a></li>
+<li><a href="#react-props-dispatch">Why don&#x2019;t I have this.props.dispatch available in my connected component?</a></li>
+<li><a href="#react-multiple-components">Should I only connect my top component, or can I connect multiple components in my tree?</a></li>
+</ul>
+</li>
+<li><strong>Miscellaneous</strong><ul>
+<li><a href="#miscellaneous-real-projects">Are there any larger, &#x201C;real&#x201D; Redux projects?</a></li>
+<li><a href="#miscellaneous-authentication">How can I implement authentication in Redux?</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="general">General</h2>
+<p><a id="general-when-to-use"></a></p>
+<h3 id="when-should-i-use-redux">When should I use Redux?</h3>
+<p>Pete Hunt, one of the early contributors to React, says:</p>
+<blockquote>
+<p>You&#x2019;ll know when you need Flux. If you aren&#x2019;t sure if you need it, you don&#x2019;t need it.</p>
+</blockquote>
+<p>Similarly, Dan Abramov, one of the creators of Redux, says:</p>
+<blockquote>
+<p>I would like to amend this: don&#x2019;t use Redux until you have problems with vanilla React.</p>
+</blockquote>
+<p>In general, use Redux when you have reasonable amounts of data changing over time, you need a single source of truth, and you find that approaches like keeping everything in a top-level React component&#x2019;s state are no longer sufficient.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="introduction/Motivation.html">Introduction: Motivation</a></li>
+</ul>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/petehunt/react-howto" target="_blank">React How-To</a></li>
+<li><a href="https://twitter.com/dan_abramov/status/699241546248536064" target="_blank">Twitter: Don&#x2019;t use Redux until...</a></li>
+<li><a href="https://medium.com/swlh/the-case-for-flux-379b7d1982c6" target="_blank">The Case for Flux</a></li>
+<li><a href="http://stackoverflow.com/questions/32461229/why-use-redux-over-facebook-flux" target="_blank">Stack Overflow: Why use Redux over Facebook Flux?</a></li>
+<li><a href="http://stackoverflow.com/questions/35675339/why-should-i-use-redux-in-this-example" target="_blank">Stack Overflow: Why should I use Redux in this example?</a></li>
+<li><a href="http://stackoverflow.com/questions/32021763/what-could-be-the-downsides-of-using-redux-instead-of-flux" target="_blank">Stack Overflow: What could be the downsides of using Redux instead of Flux?</a></li>
+</ul>
+<p><a id="general-only-react"></a></p>
+<h3 id="can-redux-only-be-used-with-react">Can Redux only be used with React?</h3>
+<p>Redux can be used as a data store for any UI layer. The most common usage is with React and React Native, but there are bindings available for Angular, Angular 2, Vue, Mithril, and more. Redux simply provides a subscription mechanism which can be used by any other code. That said it is most useful when combined with a declarative view implementation that can infer the UI updates from the state changes.</p>
+<p><a id="general-build-tools"></a></p>
+<h3 id="do-i-need-to-have-a-particular-build-tool-to-use-redux">Do I need to have a particular build tool to use Redux?</h3>
+<p>Redux is originally written in ES6 and transpiled for production into ES5 with Webpack and Babel. You should be able to use it regardless of your JavaScript build process. Redux also offers a UMD build that can be used directly without any build process at all. The <a href="https://github.com/reactjs/redux/tree/master/examples/counter-vanilla" target="_blank">counter-vanilla</a> example demonstrates basic ES5 usage with Redux included as a <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span></code> tag. As the relevant pull request says:</p>
+<blockquote>
+<p>The new Counter Vanilla example is aimed to dispel the myth that Redux requires Webpack, React, hot reloading, sagas, action creators, constants, Babel, npm, CSS modules, decorators, fluent Latin, an Egghead subscription, a PhD, or an Exceeds Expectations O.W.L. level.</p>
+<p>Nope, it&#x2019;s just HTML, some artisanal <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span></code> tags, and plain old DOM manipulation. Enjoy!</p>
+</blockquote>
+<h2 id="reducers">Reducers</h2>
+<p><a id="reducers-share-state"></a></p>
+<h3 id="how-do-i-share-state-between-two-reducers-do-i-have-to-use-combinereducers">How do I share state between two reducers? Do I have to use <code>combineReducers</code>?</h3>
+<p>The suggested structure for a Redux store is to split the state object into multiple &#x201C;slices&#x201D; or &#x201C;domains&#x201D; by key, and provide a separate reducer function to manage each individual data slice. This is similar to how the standard Flux pattern has multiple independent stores, and Redux provides the <a href="api/combineReducers.html"><code>combineReducers</code></a> utility function to make this pattern easier. However, it&#x2019;s important to note that <code>combineReducers</code> is <em>not</em> required&#x2014;it is simply a utility function for the common use case of having a single reducer function per state slice, with plain JavaScript objects for the data.</p>
+<p>Many users later want to try to share data between two reducers, but find that <code>combineReducers</code> does not allow them to do so. There are several approaches that can be used:</p>
+<ul>
+<li>If a reducer needs to know data from another slice of state, the state tree shape may need to be reorganized so that a single reducer is handling more of the data.</li>
+<li>You may need to write some custom functions for handling some of these actions. This may require replacing <code>combineReducers</code> with your own top-level reducer function. You can also use a utility such as <a href="https://github.com/acdlite/reduce-reducers" target="_blank">reduce-reducers</a> to run <code>combineReducers</code> to handle most actions, but also run a more specialized reducer for specific actions that cross state slices.</li>
+<li><a href="advanced/AsyncActions.html">Async action creators</a> such as <code>redux-thunk</code> have access to the entire state through <code>getState()</code>. An action creator can retrieve additional data from the state and put it in an action, so that each reducer has enough information to update its own state slice.</li>
+</ul>
+<p>In general, remember that reducers are just functions&#x2014;you can organize them and subdivide them any way you want, and you are encouraged to break them down into smaller, reusable functions (&#x201C;reducer composition&#x201D;). While you do so, you may pass a custom third argument from a parent reducer if a child reducer needs additional data to calculate its next state. You just need to make sure that together they follow the basic rules of reducers: <code>(state, action) =&gt; newState</code>, and update state immutably rather than mutating it directly.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="api/combineReducers.html">API: combineReducers</a></li>
+</ul>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/601" target="_blank">#601: A concern on combineReducers, when an action is related to multiple reducers</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1400" target="_blank">#1400: Is passing top-level state object to branch reducer an anti-pattern?</a></li>
+<li><a href="http://stackoverflow.com/questions/34333979/accessing-other-parts-of-the-state-when-using-combined-reducers" target="_blank">Stack Overflow: Accessing other parts of the state when using combined reducers?</a></li>
+<li><a href="http://stackoverflow.com/questions/34427851/reducing-an-entire-subtree-with-redux-combinereducers" target="_blank">Stack Overflow: Reducing an entire subtree with redux combineReducers</a></li>
+<li><a href="https://invalidpatent.wordpress.com/2016/02/18/sharing-state-between-redux-reducers/" target="_blank">Sharing State Between Redux Reducers</a></li>
+</ul>
+<p><a id="reducers-use-switch"></a></p>
+<h3 id="do-i-have-to-use-the-switch-statement-to-handle-actions">Do I have to use the <code>switch</code> statement to handle actions?</h3>
+<p>No. You are welcome to use any approach you&#x2019;d like to respond to an action in a reducer. The <code>switch</code> statement is the most common approach, but it&#x2019;s fine to use <code>if</code> statements, a lookup table of functions, or to create a function that abstracts this away.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="recipes/ReducingBoilerplate.html">Recipes: Reducing Boilerplate</a></li>
+</ul>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/883" target="_blank">#883: take away the huge switch block</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1167" target="_blank">#1167: Reducer without switch</a></li>
+</ul>
+<h2 id="organizing-state">Organizing State</h2>
+<p><a id="organizing-state-only-redux-state"></a></p>
+<h3 id="do-i-have-to-put-all-my-state-into-redux-should-i-ever-use-reacts-setstate">Do I have to put all my state into Redux? Should I ever use React&#x2019;s <code>setState()</code>?</h3>
+<p>There is no &#x201C;right&#x201D; answer for this. Some users prefer to keep every single piece of data in Redux, to maintain a fully serializable and controlled version of their application at all times. Others prefer to keep non-critical or UI state, such as &#x201C;is this dropdown currently open&#x201D;, inside a component&#x2019;s internal state. Find a balance that works for you, and go with it.</p>
+<p>There are a number of community packages that implement various approaches for storing per-component state in a Redux store instead, such as <a href="https://github.com/tonyhb/redux-ui" target="_blank">redux-ui</a>, <a href="https://github.com/tomchentw/redux-component" target="_blank">redux-component</a>, <a href="https://github.com/threepointone/redux-react-local" target="_blank">redux-react-local</a>, and more.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/159" target="_blank">#159: Investigate using Redux for pseudo-local component state</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1098" target="_blank">#1098: Using Redux in reusable React component</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1287" target="_blank">#1287: How to choose between Redux&apos;s store and React&apos;s state?</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1385" target="_blank">#1385: What are the disadvantages of storing all your state in a single immutable atom?</a></li>
+<li><a href="http://stackoverflow.com/questions/35664594/redux-why-is-state-all-in-one-place-even-state-that-isnt-global" target="_blank">Stack Overflow: Why is state all in one place, even state that isn&apos;t global?</a></li>
+<li><a href="http://stackoverflow.com/questions/35328056/react-redux-should-all-component-states-be-kept-in-redux-store" target="_blank">Stack Overflow: Should all component state be kept in Redux store?</a></li>
+</ul>
+<p><a id="organizing-state-non-serializable"></a></p>
+<h3 id="can-i-put-functions-promises-or-other-non-serializable-items-in-my-store-state">Can I put functions, promises, or other non-serializable items in my store state?</h3>
+<p>It is highly recommended that you only put plain serializable objects, arrays, and primitives into your store. It&#x2019;s <em>technically</em> possible to insert non-serializable items into the store, but doing so can break the ability to persist and rehydrate the contents of a store.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/1248" target="_blank">#1248: Is it ok and possible to store a react component in a reducer?</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1279" target="_blank">#1279: Have any suggestions for where to put a Map Component in Flux?</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1390" target="_blank">#1390: Component Loading</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1407" target="_blank">#1407: Just sharing a great base class</a></li>
+</ul>
+<p><a id="organizing-state-nested-data"></a></p>
+<h3 id="how-do-i-organize-nested-or-duplicate-data-in-my-state">How do I organize nested or duplicate data in my state?</h3>
+<p>Data with IDs, nesting, or relationships should generally be stored in a &#x201C;normalized&#x201D; fashion: each object should be stored once, keyed by ID, and other objects that reference it should only store the ID rather than a copy of the entire object. It may help to think of parts of your store as a database, with individual &#x201C;tables&#x201D; per item type. Libraries such as <a href="https://github.com/gaearon/normalizr" target="_blank">normalizr</a> and <a href="https://github.com/tommikaikkonen/redux-orm" target="_blank">redux-orm</a> can provide help and abstractions in managing normalized data.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="advanced/AsyncActions.html">Advanced: Async Actions</a></li>
+<li><a href="introduction/Examples.html#real-world">Examples: Real World example</a></li>
+</ul>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/316" target="_blank">#316: How to create nested reducers?</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/815" target="_blank">#815: Working with Data Structures</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/946" target="_blank">#946: Best way to update related state fields with split reducers?</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/994" target="_blank">#994: How to cut the boilerplate when updating nested entities?</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1255" target="_blank">#1255: Normalizr usage with nested objects in React/Redux</a></li>
+<li><a href="https://twitter.com/dan_abramov/status/715507260244496384" target="_blank">Twitter: state shape should be normalized</a></li>
+</ul>
+<h2 id="store-setup">Store Setup</h2>
+<p><a id="store-setup-multiple-stores"></a></p>
+<h3 id="can-or-should-i-create-multiple-stores-can-i-import-my-store-directly-and-use-it-in-components-myself">Can or should I create multiple stores? Can I import my store directly, and use it in components myself?</h3>
+<p>The original Flux pattern describes having multiple &#x201C;stores&#x201D; in an app, each one holding a different area of domain data. This can introduce issues such as needing to have one store &#x201C;<code>waitFor</code>&#x201D; another store to update. This is not necessary in Redux because the separation between data domains is already achieved by splitting a single reducer into smaller reducers.</p>
+<p>As with several other questions, it is <em>possible</em> to create multiple distinct Redux stores in a page, but the intended pattern is to have only a single store. Having a single store enables using the Redux DevTools, makes persisting and rehydrating data simpler, and simplifies the subscription logic.</p>
+<p>Some valid reasons for using multiple stores in Redux might include:</p>
+<ul>
+<li>Solving a performance issue caused by too frequent updates of some part of the state, when confirmed by profiling the app.</li>
+<li>Isolating a Redux app as a component in a bigger application, in which case you might want to create a store per root component instance.</li>
+</ul>
+<p>However, creating new stores shouldn&#x2019;t be your first instinct, especially if you come from a Flux background. Try reducer composition first, and only use multiple stores if it doesn&#x2019;t solve your problem.</p>
+<p>Similarly, while you <em>can</em> reference your store instance by importing it directly, this is not a recommended pattern in Redux. If you create a store instance and export it from a module, it will become a singleton. This means it will be harder to isolate a Redux app as a component of a larger app, if this is ever necessary, or to enable server rendering, because on the server you want to create separate store instances for every request.</p>
+<p>With <a href="https://github.com/rackt/react-redux" target="_blank">React Redux</a>, the wrapper classes generated by the <code>connect()</code> function do actually look for <code>props.store</code> if it exists, but it&#x2019;s best if you wrap your root component in <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Provider</span> <span class="token attr-name">store</span><span class="token attr-value"><span class="token punctuation">=</span>{store}</span><span class="token punctuation">&gt;</span></span></code> and let React Redux worry about passing the store down. This way components don&#x2019;t need to worry about importing a store module, and isolating a Redux app or enabling server rendering is much easier to do later.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="api/Store.html">API: Store</a></li>
+</ul>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/1436" target="_blank">#1346: Is it bad practice to just have a &apos;stores&apos; directory?</a></li>
+<li><a href="http://stackoverflow.com/questions/33619775/redux-multiple-stores-why-not" target="_blank">Stack Overflow: Redux multiple stores, why not?</a></li>
+<li><a href="http://stackoverflow.com/questions/35667249/accessing-redux-state-in-an-action-creator" target="_blank">Stack Overflow: Accessing Redux state in an action creator</a></li>
+<li><a href="https://gist.github.com/gaearon/eeee2f619620ab7b55673a4ee2bf8400" target="_blank">Gist: Breaking out of Redux paradigm to isolate apps</a></li>
+</ul>
+<p><a id="store-setup-middleware-chains"></a></p>
+<h3 id="is-it-ok-to-have-more-than-one-middleware-chain-in-my-store-enhancer-what-is-the-difference-between-next-and-dispatch-in-a-middleware-function">Is it OK to have more than one middleware chain in my store enhancer? What is the difference between <code>next</code> and <code>dispatch</code> in a middleware function?</h3>
+<p>Redux middleware act like a linked list. Each middleware function can either call <code>next(action)</code> to pass an action along to the next middleware in line, call <code>dispatch(action)</code> to restart the processing at the beginning of the list, or do nothing at all to stop the action from being processed further.</p>
+<p>This chain of middleware is defined by the arguments passed to the <code>applyMiddleware</code> function used when creating a store. Defining multiple chains will not work correctly, as they would have distinctly different <code>dispatch</code> references and the different chains would effectively be disconnected.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="advanced/Middleware.html">Advanced: Middleware</a></li>
+<li><a href="api/applyMiddleware.html">API: applyMiddleware</a></li>
+</ul>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/1051" target="_blank">#1051: Shortcomings of the current applyMiddleware and composing createStore</a></li>
+<li><a href="https://medium.com/@meagle/understanding-87566abcfb7a" target="_blank">Understanding Redux Middleware</a></li>
+<li><a href="http://blog.krawaller.se/posts/exploring-redux-middleware/" target="_blank">Exploring Redux Middleware</a></li>
+</ul>
+<p><a id="store-setup-subscriptions"></a></p>
+<h3 id="how-do-i-subscribe-to-only-a-portion-of-the-state-can-i-get-the-dispatched-action-as-part-of-the-subscription">How do I subscribe to only a portion of the state? Can I get the dispatched action as part of the subscription?</h3>
+<p>Redux provides a single <code>store.subscribe</code> method for notifying listeners that the store has updated. Listener callbacks do not receive the current state as an argument&#x2014;it is simply an indication that <em>something</em> has changed. The subscriber logic can then call <code>getState()</code> to get the current state value.</p>
+<p>This API is intended as a low-level primitive with no dependencies or complications, and can be used to build higher-level subscription logic. UI bindings such as React Redux can create a subscription for each connected component. It is also possible to write functions that can intelligently compare the old state vs the new state, and execute additional logic if certain pieces have changed. Examples include <a href="https://github.com/jprichardson/redux-watch" target="_blank">redux-watch</a> and <a href="https://github.com/ashaffer/redux-subscribe" target="_blank">redux-subscribe</a> which offer different approaches to specifying subscriptions and handling changes.</p>
+<p>The new state is not passed to the listeners in order to simplify implementing store enhancers such as the Redux DevTools. In addition, subscribers are intended to react to the state value itself, not the action. Middleware can be used if the action is important and needs to be handled specifically.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="basics/Store.html">Basics: Store</a></li>
+<li><a href="api/Store.html">API: Store</a></li>
+</ul>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/303" target="_blank">#303: subscribe API with state as an argument</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/580" target="_blank">#580: Is it possible to get action and state in store.subscribe?</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/922" target="_blank">#922: Proposal: add subscribe to middleware API</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1057" target="_blank">#1057: subscribe listener can get action param?</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1300" target="_blank">#1300: Redux is great but major feature is missing</a></li>
+</ul>
+<h2 id="actions">Actions</h2>
+<p><a id="actions-string-constants"></a></p>
+<h3 id="why-should-type-be-a-string-or-at-least-serializable-why-should-my-action-types-be-constants">Why should <code>type</code> be a string, or at least serializable? Why should my action types be constants?</h3>
+<p>As with state, serializable actions enable several of Redux&#x2019;s defining features, such as time travel debugging, and recording and replaying actions. Using something like a <code>Symbol</code> for the <code>type</code> value or using <code>instanceof</code> checks for actions themselves would break that. Strings are serializable and easily self-descriptive, and so are a better choice. Note that it <em>is</em> okay to use Symbols, Promises, or other non-serializable values in an action if the action is intended for use by middleware. Actions only need to be serializable by the time they actually reach the store and are passed to the reducers.</p>
+<p>We can&#x2019;t reliably enforce serializable actions for performance reasons, so Redux only checks that every action is a plain object, and that the <code>type</code> is defined. The rest is up to you, but you might find that keeping everything serializable helps debug and reproduce issues.</p>
+<p>Encapsulating and centralizing commonly used pieces of code is a key concept in programming. While it is certainly possible to manually create action objects everywhere, and write each <code>type</code> value by hand, defining reusable constants makes maintaining code easier. If you put constants in a separate file, you can <a href="https://www.npmjs.com/package/eslint-plugin-import" target="_blank">check your <code>import</code> statements against typos</a> so you can&#x2019;t accidentally use the wrong string.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="http://rackt.github.io/redux/docs/recipes/ReducingBoilerplate.html#actions" target="_blank">Reducing Boilerplate</a></li>
+</ul>
+<p><strong>Discussion</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/384" target="_blank">#384: Recommend that Action constants be named in the past tense</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/628" target="_blank">#628: Solution for simple action creation with less boilerplate</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1024" target="_blank">#1024: Proposal: Declarative reducers</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1167" target="_blank">#1167: Reducer without switch</a></li>
+<li><a href="http://stackoverflow.com/q/34759047/62937" target="_blank">Stack Overflow: Why do you need &apos;Actions&apos; as data in Redux?</a></li>
+<li><a href="http://stackoverflow.com/q/34965856/62937" target="_blank">Stack Overflow: What is the point of the constants in Redux?</a></li>
+</ul>
+<p><a id="actions-reducer-mappings"></a></p>
+<h3 id="is-there-always-a-one-to-one-mapping-between-reducers-and-actions">Is there always a one-to-one mapping between reducers and actions?</h3>
+<p>No. We suggest you write independent small reducer functions that are each responsible for updates to a specific slice of state. We call this pattern &#x201C;reducer composition&#x201D;. A given action could be handled by all, some, or none of them. This keep components decoupled from the actual data changes, as one action may affect different parts of the state tree, and there is no need for the component to be aware of this. Some users do choose to bind them more tightly together, such as the &#x201C;ducks&#x201D; file structure, but there is definitely no one-to-one mapping by default, and you should break out of such a paradigm any time you feel you want to handle an action in many reducers.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="basics/Reducers.html">Basics: Reducers</a></li>
+</ul>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://twitter.com/dan_abramov/status/682923564006248448" target="_blank">Twitter: most common Redux misconception</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1167" target="_blank">#1167: Reducer without switch</a></li>
+<li><a href="https://github.com/reduxible/reduxible/issues/8" target="_blank">Reduxible #8: Reducers and action creators aren&apos;t a one-to-one mapping</a></li>
+<li><a href="http://stackoverflow.com/questions/35493352/can-i-dispatch-multiple-actions-without-redux-thunk-middleware/35642783" target="_blank">Stack Overflow: Can I dispatch multiple actions without Redux Thunk middleware?</a></li>
+</ul>
+<p><a id="actions-side-effects"></a></p>
+<h3 id="how-can-i-represent-side-effects-such-as-ajax-calls-why-do-we-need-things-like-action-creators-thunks-and-middleware-to-do-async-behavior">How can I represent &#x201C;side effects&#x201D; such as AJAX calls? Why do we need things like &#x201C;action creators&#x201D;, &#x201C;thunks&#x201D;, and &#x201C;middleware&#x201D; to do async behavior?</h3>
+<p>This is a long and complex topic, with a wide variety of opinions on how code should be organized and what approaches should be used.</p>
+<p>Any meaningful web app needs to execute complex logic, usually including asynchronous work such as making AJAX requests. That code is no longer purely a function of its inputs, and the interactions with the outside world are known as <a href="https://en.wikipedia.org/wiki/Side_effect_%28computer_science%29" target="_blank">&#x201C;side effects&#x201D;</a></p>
+<p>Redux is inspired by functional programming, and out of the box, has no place for side effects to be executed. In particular, reducer functions <em>must</em> always be pure functions of <code>(state, action) =&gt; newState</code>. However, Redux&#x2019;s middleware makes it possible to intercept dispatched actions and add additional complex behavior around them, including side effects.</p>
+<p>In general, Redux suggests that code with side effects should be part of the action creation process. While that logic <em>can</em> be performed inside of a UI component, it generally makes sense to extract that logic into a reusable function so that the same logic can be called from multiple places&#x2014;in other words, an action creator function.</p>
+<p>The simplest and most common way to do this is to add the <a href="https://github.com/gaearon/redux-thunk" target="_blank">Redux Thunk</a> middleware that lets you write action creators with more complex and asynchronous logic. Another widely-used method is <a href="https://github.com/yelouafi/redux-saga" target="_blank">Redux Saga</a> which lets you write more synchronous-looking code using generators, and can act like &#x201C;background threads&#x201D; or &#x201C;daemons&#x201D; in a Redux app. Yet another approach is <a href="https://github.com/raisemarketplace/redux-loop" target="_blank">Redux Loop</a>, which inverts the process by allowing your reducers to declare side effects in response to state changes and have them executed separately. Beyond that, there are <em>many</em> other community-developed libraries and ideas, each with their own take on how side effects should be managed.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="advanced/AsyncActions.html">Advanced: Async Actions</a></li>
+<li><a href="advanced/AsyncFlow.html">Advanced: Async Flow</a></li>
+<li><a href="advanced/Middleware.html">Advanced: Middleware</a></li>
+</ul>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/291" target="_blank">#291: Trying to put API calls in the right place</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/455" target="_blank">#455: Modeling side effects</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/533" target="_blank">#533: Simpler introduction to async action creators</a></li>
+<li><a href="https://github.com/reactjs/redux/pull/569" target="_blank">#569: Proposal: API for explicit side effects</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1139" target="_blank">#1139: An alternative side effect model based on generators and sagas</a></li>
+<li><a href="http://stackoverflow.com/questions/34570758/why-do-we-need-middleware-for-async-flow-in-redux" target="_blank">Stack Overflow: Why do we need middleware for async flow in Redux?</a></li>
+<li><a href="http://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559" target="_blank">Stack Overflow: How to dispatch a Redux action with a timeout?</a></li>
+<li><a href="http://stackoverflow.com/questions/32982237/where-should-i-put-synchronous-side-effects-linked-to-actions-in-redux/33036344" target="_blank">Stack Overflow: Where should I put synchronous side effects linked to actions in redux?</a></li>
+<li><a href="http://stackoverflow.com/questions/32925837/how-to-handle-complex-side-effects-in-redux/33036594" target="_blank">Stack Overflow: How to handle complex side-effects in Redux?</a></li>
+<li><a href="http://stackoverflow.com/questions/33011729/how-to-unit-test-async-redux-actions-to-mock-ajax-response/33053465" target="_blank">Stack Overflow: How to unit test async Redux actions to mock ajax response</a></li>
+<li><a href="http://stackoverflow.com/questions/35262692/how-to-fire-ajax-calls-in-response-to-the-state-changes-with-redux/35675447" target="_blank">Stack Overflow: How to fire AJAX calls in response to the state changes with Redux?</a></li>
+<li><a href="https://www.reddit.com/r/reactjs/comments/469iyc/help_performing_async_api_calls_with_reduxpromise/" target="_blank">Reddit: Help performing Async API calls with Redux-Promise Middleware.</a></li>
+<li><a href="https://twitter.com/dan_abramov/status/689639582120415232" target="_blank">Twitter: possible comparison between sagas, loops, and other approaches</a></li>
+<li><a href="https://medium.com/@fward/redux-side-effects-and-you-66f2e0842fc3" target="_blank">Redux Side-Effects and You</a></li>
+<li><a href="http://blog.hivejs.org/building-the-ui-2/" target="_blank">Pure functionality and side effects in Redux</a></li>
+</ul>
+<p><a id="actions-multiple-actions"></a></p>
+<h3 id="should-i-dispatch-multiple-actions-in-a-row-from-one-action-creator">Should I dispatch multiple actions in a row from one action creator?</h3>
+<p>There&#x2019;s no specific rule for how you should structure your actions. Using an async middleware like Redux Thunk certainly enables scenarios such as dispatching multiple distinct but related actions in a row, dispatching actions to represent progression of an AJAX request, dispatching actions conditionally based on state, or even dispatching an action and checking the updated state immediately afterwards.</p>
+<p>In general, ask if these actions are related but independent, or should actually be represented as one action. Do what makes sense for your own situation but try to balance the readability of reducers with readability of the action log. For example, an action that includes the whole new state tree would make your reducer a one-liner, but the downside is now you have no history of <em>why</em> the changes are happening, so debugging gets really difficult. On the other hand, if you emit actions in a loop to keep them granular, it&#x2019;s a sign that you might want to introduce a new action type that is handled in a different way.</p>
+<p>Try to avoid dispatching several times synchronously in a row in the places where you&#x2019;re concerned about performance. If you use React, note that you can improve performance of multiple synchronous dispatches by wrapping them in <code>ReactDOM.unstable_batchedUpdates()</code>, but this API is experimental and may be removed in any React release so don&#x2019;t rely on it too heavily. Take a look at <a href="https://github.com/tshelburne/redux-batched-actions" target="_blank">redux-batched-actions</a> that lets you dispatch several actions as if it was one and &#x201C;unpack&#x201D; them in the reducer, and <a href="https://github.com/tappleby/redux-batched-subscribe" target="_blank">redux-batched-subscribe</a> which lets you debounce subscriber calls for multiple dispatches.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/597" target="_blank">#597: Valid to dispatch multiple actions from an event handler?</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/959" target="_blank">#959: Multiple actions one dispatch?</a></li>
+<li><a href="http://stackoverflow.com/questions/33637740/should-i-use-one-or-several-action-types-to-represent-this-async-action/33816695" target="_blank">Stack Overflow: Should I use one or several action types to represent this async action?</a></li>
+<li><a href="http://stackoverflow.com/questions/35406707/do-events-and-actions-have-a-11-relationship-in-redux/35410524" target="_blank">Stack Overflow: Do events and actions have a 1:1 relationship in Redux?</a></li>
+<li><a href="http://stackoverflow.com/questions/33220776/should-actions-like-showing-hiding-loading-screens-be-handled-by-reducers-to-rel/33226443#33226443" target="_blank">Stack Overflow: Should actions be handled by reducers to related actions or generated by action creators themselves?</a></li>
+</ul>
+<h2 id="code-structure">Code Structure</h2>
+<p><a id="structure-file-structure"></a></p>
+<h3 id="what-should-my-file-structure-look-like-how-should-i-group-my-action-creators-and-reducers-in-my-project-where-should-my-selectors-go">What should my file structure look like? How should I group my action creators and reducers in my project? Where should my selectors go?</h3>
+<p>Since Redux is just a data store library, it has no direct opinion on how your project should be structured. However, there are a few common patterns that most Redux developers tend to use:</p>
+<ul>
+<li>Rails-style: separate folders for &#x201C;actions&#x201D;, &#x201C;constants&#x201D;, &#x201C;reducers&#x201D;, &#x201C;containers&#x201D;, and &#x201C;components&#x201D;</li>
+<li>Domain-style: separate folders per feature or domain, possibly with sub-folders per file type</li>
+<li>&#x201C;Ducks&#x201D;: similar to domain style, but explicitly tying together actions and reducers, often by defining them in the same file</li>
+</ul>
+<p>It&#x2019;s generally suggested that selectors are defined alongside reducers and exported, and then reused elsewhere (such as in <code>mapStateToProps</code> functions, in async action creators, or sagas) to colocate all the code that knows about the actual shape of the state tree in the reducer files.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/839" target="_blank">#839: Emphasize defining selectors alongside reducers</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/943" target="_blank">#943: Reducer querying</a></li>
+<li><a href="https://github.com/mxstbr/react-boilerplate/issues/27" target="_blank">React Boilerplate #27: Application Structure</a></li>
+<li><a href="http://stackoverflow.com/questions/32634320/how-to-structure-redux-components-containers/32921576" target="_blank">Stack Overflow: How to structure Redux components/containers</a></li>
+<li><a href="https://medium.com/lexical-labs-engineering/redux-best-practices-64d59775802e" target="_blank">Redux Best Practices</a></li>
+<li><a href="http://jaysoo.ca/2016/02/28/organizing-redux-application/" target="_blank">Rules For Structuring (Redux) Applications </a></li>
+<li><a href="http://marmelab.com/blog/2015/12/17/react-directory-structure.html" target="_blank">A Better File Structure for React/Redux Applications</a></li>
+<li><a href="http://engineering.kapost.com/2016/01/organizing-large-react-applications/" target="_blank">Organizing Large React Applications</a></li>
+<li><a href="https://medium.com/@msandin/strategies-for-organizing-code-2c9d690b6f33" target="_blank">Four Strategies for Organizing Code</a></li>
+</ul>
+<p><a id="structure-business-logic"></a></p>
+<h3 id="how-should-i-split-my-logic-between-reducers-and-action-creators-where-should-my-business-logic-go">How should I split my logic between reducers and action creators? Where should my &#x201C;business logic&#x201D; go?</h3>
+<p>There&#x2019;s no single clear answer to exactly what pieces of logic should go in a reducer or an action creator. Some developers prefer to have &#x201C;fat&#x201D; action creators, with &#x201C;thin&#x201D; reducers that simply take the data in an action and blindly merge it into the corresponding state. Others try to emphasize keeping actions as small as possible, and minimize the usage of <code>getState()</code> in an action creator.</p>
+<p>This comment sums up the dichotomy nicely:</p>
+<blockquote>
+<p>Now, the problem is what to put in the action creator and what in the reducer, the choice between fat and thin action objects. If you put all the logic in the action creator, you end up with fat action objects that basically declare the updates to the state. Reducers become pure, dumb, add-this, remove that, update these functions. They will be easy to compose. But not much of your business logic will be there.
+If you put more logic in the reducer, you end up with nice, thin action objects, most of your data logic in one place, but your reducers are harder to compose since you might need info from other branches. You end up with large reducers or reducers that take additional arguments from higher up in the state.</p>
+</blockquote>
+<p>Find the balance between these two extremes, and you will master Redux.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/1165" target="_blank">#1165: Where to put business logic / validation?</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1171" target="_blank">#1171: Recommendations for best practices regarding action-creators, reducers, and selectors</a></li>
+<li><a href="http://stackoverflow.com/questions/35667249/accessing-redux-state-in-an-action-creator/35674575" target="_blank">Stack Overflow: Accessing Redux state in an action creator?</a></li>
+</ul>
+<h2 id="performance">Performance</h2>
+<p><a id="performance-scaling"></a></p>
+<h3 id="how-well-does-redux-scale-in-terms-of-performance-and-architecture">How well does Redux &#x201C;scale&#x201D; in terms of performance and architecture?</h3>
+<p>While there&#x2019;s no single definitive answer to this, most of the time this should not be a concern in either case.</p>
+<p>The work done by Redux generally falls into a few areas: processing actions in middleware and reducers (including object duplication for immutable updates), notifying subscribers after actions are dispatched, and updating UI components based on the state changes. While it&#x2019;s certainly <em>possible</em> for each of these to become a performance concern in sufficiently complex situations, there&#x2019;s nothing inherently slow or inefficient about how Redux is implemented. In fact, React Redux in particular is heavily optimized to cut down on unnecessary re-renders.</p>
+<p>As for architecture, anecdotal evidence is that Redux works well for varying project and team sizes. Redux is currently used by hundreds of companies and thousands of developers, with several hundred thousand monthly installations from NPM. One developer reported:</p>
+<blockquote>
+<p>for scale, we have ~500 action types, ~400 reducer cases, ~150 components, 5 middlewares, ~200 actions, ~2300 tests</p>
+</blockquote>
+<h4 id="further-information">Further information</h4>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/310" target="_blank">#310: Who uses Redux?</a></li>
+<li><a href="https://www.reddit.com/r/reactjs/comments/47m9h5/whats_the_best_place_to_keep_the_initial_state/" target="_blank">Reddit: What&apos;s the best place to keep the initial state?</a></li>
+<li><a href="https://www.reddit.com/r/reactjs/comments/48k852/help_designing_redux_state_for_a_single_page/" target="_blank">Reddit: Help designing Redux state for a single page app</a></li>
+<li><a href="https://www.reddit.com/r/reactjs/comments/41wdqn/redux_performance_issues_with_a_large_state_object/" target="_blank">Reddit: Redux performance issues with a large state object?</a></li>
+<li><a href="https://www.reddit.com/r/javascript/comments/49box8/reactredux_for_ultra_large_scale_apps/" target="_blank">Reddit: React/Redux for Ultra Large Scale apps</a></li>
+<li><a href="https://twitter.com/NickPresta/status/684058236828266496" target="_blank">Twitter: Redux scaling</a></li>
+</ul>
+<p><a id="performance-all-reducers"></a></p>
+<h3 id="wont-calling-all-my-reducers-for-each-action-be-slow">Won&#x2019;t calling &#x201C;all my reducers&#x201D; for each action be slow?</h3>
+<p>It&#x2019;s important to note that a Redux store really only has a single reducer function. The store passes the current state and dispatched action to that one reducer function, and lets the reducer handle things appropriately.</p>
+<p>Obviously, trying to handle every possible action in a single function does not scale well, simply in terms of function size and readability, so it makes sense to split the actual work into separate functions that can be called by the top-level reducer. In particular, the common suggested pattern is to have a separate sub-reducer function that is responsible for managing updates to a particular slice of state at a specific key. The <code>combineReducers()</code> that comes with Redux is one of the many possible ways to achieve this. It&#x2019;s also highly suggested to keep your store state as flat and as normalized as possible. Ultimately, though, you are in charge of organizing your reducer logic any way you want.</p>
+<p>However, even if you happen to have many different independent sub-reducers, and even have deeply nested state, reducer speed is unlikely to be a problem. JavaScript engines are capable of running a very large number of function calls per second, and most of your sub-reducers are probably just using a <code>switch</code> statement and returning the existing state by default in response to most actions.</p>
+<p>If you actually are concerned about reducer performance, you can use a utility such as <a href="https://github.com/omnidan/redux-ignore" target="_blank">redux-ignore</a> or <a href="https://github.com/chrisdavies/reduxr-scoped-reducer" target="_blank">reduxr-scoped-reducer</a> to ensure that only certain reducers listen to specific actions. You can also use <a href="https://github.com/michaelcontento/redux-log-slow-reducers" target="_blank">redux-log-slow-reducers</a> to do some performance benchmarking.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/912" target="_blank">#912: Proposal: action filter utility</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1303" target="_blank">#1303: Redux Performance with Large Store and frequent updates</a></li>
+<li><a href="http://stackoverflow.com/questions/35667775/state-in-redux-react-app-has-a-property-with-the-name-of-the-reducer/35674297" target="_blank">Stack Overflow: State in Redux app has the name of the reducer</a></li>
+<li><a href="http://stackoverflow.com/questions/34494866/how-does-redux-deals-with-deeply-nested-models/34495397" target="_blank">Stack Overflow: How does Redux deal with deeply nested models?</a></li>
+</ul>
+<p><a id="performance-clone-state"></a></p>
+<h3 id="do-i-have-to-deep-clone-my-state-in-a-reducer-isnt-copying-my-state-going-to-be-slow">Do I have to deep-clone my state in a reducer? Isn&#x2019;t copying my state going to be slow?</h3>
+<p>Immutably updating state generally means making shallow copies, not deep copies. Shallow copies are much faster than deep copies, because fewer objects and fields have to be copied, and it effectively comes down to moving some pointers around.</p>
+<p>However, you <em>do</em> need to create a copied and updated object for each level of nesting that is affected. Although that shouldn&#x2019;t be particularly expensive, it&#x2019;s another good reason why you should keep your state normalized and shallow if possible.</p>
+<blockquote>
+<p>Common Redux misconception: you need to deeply clone the state. Reality: if something inside doesn&#x2019;t change, keep its reference the same!</p>
+</blockquote>
+<h4 id="further-information">Further information</h4>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/454" target="_blank">#454: Handling big states in reducer</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/758" target="_blank">#758: Why can&apos;t state be mutated?</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/994" target="_blank">#994: How to cut the boilerplate when updating nested entities?</a></li>
+<li><a href="https://twitter.com/dan_abramov/status/688087202312491008" target="_blank">Twitter: common misconception - deep cloning</a></li>
+<li><a href="http://www.zsoltnagy.eu/cloning-objects-in-javascript/" target="_blank">Cloning Objects in JavaScript</a></li>
+</ul>
+<p><a id="performance-update-events"></a></p>
+<h3 id="how-can-i-reduce-the-number-of-store-update-events">How can I reduce the number of store update events?</h3>
+<p>Redux notifies subscribers after each successfully dispatched action (i.e. an action reached the store and was handled by reducers). In some cases, it may be useful to cut down on the number of times subscribers are called, particularly if an action creator dispatches multiple distinct actions in a row. There are a number of community add-ons that provide batching of subscription notifications when multiple actions are dispatched, such as <a href="https://github.com/tappleby/redux-batched-subscribe" target="_blank">redux-batched-subscribe</a> and <a href="https://github.com/tshelburne/redux-batched-actions" target="_blank">redux-batched-actions</a>.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/125" target="_blank">#125: Strategy for avoiding cascading renders</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/542" target="_blank">#542: Idea: batching actions</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/911" target="_blank">#911: Batching actions</a></li>
+<li><a href="https://github.com/reactjs/react-redux/issues/263" target="_blank">React Redux #263: Huge performance issue when dispatching hundreds of actions</a></li>
+</ul>
+<p><a id="performance-state-memory"></a></p>
+<h3 id="will-having-one-state-tree-cause-memory-problems-will-dispatching-many-actions-take-up-memory">Will having &#x201C;one state tree&#x201D; cause memory problems? Will dispatching many actions take up memory?</h3>
+<p>First, in terms of raw memory usage, Redux is no different than any other JavaScript library. The only difference is that all the various object references are nested together into one tree, instead of maybe saved in various independent model instances such as in Backbone. Second, a typical Redux app would probably have somewhat <em>less</em> memory usage than an equivalent Backbone app because Redux encourages use of plain JavaScript objects and arrays rather than creating instances of Models and Collections. Finally, Redux only holds onto a single state tree reference at a time. Objects that are no longer referenced in that tree will be garbage collected, as usual.</p>
+<p>Redux does not store a history of actions itself. However, the Redux DevTools do store actions so they can be replayed, but those are generally only enabled during development, and not used in production.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="advanced/AsyncActions.md]">Docs: Async Actions</a></li>
+</ul>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="http://stackoverflow.com/questions/35627553/is-there-any-way-to-commit-the-state-in-redux-to-free-memory/35634004" target="_blank">Stack Overflow: Is there any way to &quot;commit&quot; the state in Redux to free memory?</a></li>
+<li><a href="https://www.reddit.com/r/reactjs/comments/47m9h5/whats_the_best_place_to_keep_the_initial_state/" target="_blank">Reddit: What&apos;s the best place to keep initial state?</a></li>
+</ul>
+<h2 id="react-redux">React Redux</h2>
+<p><a id="react-not-rerendering"></a></p>
+<h3 id="why-isnt-my-component-re-rendering-or-my-mapstatetoprops-running">Why isn&#x2019;t my component re-rendering, or my mapStateToProps running?</h3>
+<p>Accidentally mutating or modifying your state directly is by far the most common reason why components do not re-render after an action has been dispatched. Redux expects that your reducers will update their state &#x201C;immutably&#x201D;, which effectively means always making copies of your data, and applying your changes to the copies. If you return the same object from a reducer, Redux assumes that nothing has been changed, even if you made changes to its contents. Similarly, React Redux tries to improve performance by doing shallow equality reference checks on incoming props in <code>shouldComponentUpdate</code>, and if all references are the same, returns <code>false</code> to skip actually updating your original component.</p>
+<p>It&#x2019;s important to remember that whenever you update a nested value, you must also return new copies of anything above it in your state tree. If you have <code>state.a.b.c.d</code>, and you want to make an update to <code>d</code>, you would also need to return new copies of <code>c</code>, <code>b</code>, <code>a</code>, and <code>state</code>. This <a href="http://arqex.com/wp-content/uploads/2015/02/trees.png" target="_blank">state tree mutation diagram</a> demonstrates how a change deep in a tree requires changes all the way up.</p>
+<p>Note that &#x201C;updating data immutably&#x201D; does <em>not</em> mean that you must use <a href="https://facebook.github.io/immutable-js/" target="_blank">Immutable.js</a>, although that is certainly an option. You can do immutable updates to plain JS objects and arrays using several different approaches:</p>
+<ul>
+<li>Copying objects using functions like <code>Object.assign()</code> or <code>_.extend()</code>, and array functions such as <code>slice()</code> and <code>concat()</code></li>
+<li>The array spread operator in ES6, and the similar object spread operator that is proposed for a future version of JavaScript</li>
+<li>Utility libraries that wrap immutable update logic into simpler functions</li>
+</ul>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="Troubleshooting.html">Troubleshooting</a></li>
+<li><a href="https://github.com/reactjs/react-redux/blob/master/docs/troubleshooting.md" target="_blank">React Redux: Troubleshooting</a></li>
+<li><a href="recipes/UsingObjectSpreadOperator.html">Recipes: Using the Object Spread Operator</a></li>
+</ul>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/1262" target="_blank">#1262: Immutable data + bad performance</a></li>
+<li><a href="https://github.com/reactjs/react-redux/issues/235" target="_blank">React Redux #235: Predicate function for updating component</a></li>
+<li><a href="https://github.com/reactjs/react-redux/issues/291" target="_blank">React Redux #291: Should mapStateToProps be called every time an action is dispatched?</a></li>
+<li><a href="http://stackoverflow.com/questions/35592078/cleaner-shorter-way-to-update-nested-state-in-redux" target="_blank">Stack Overflow: Cleaner/shorter way to update nested state in Redux?</a></li>
+<li><a href="https://gist.github.com/amcdnl/7d93c0c67a9a44fe5761#gistcomment-1706579" target="_blank">Gist: state mutations</a></li>
+<li><a href="http://reactkungfu.com/2015/08/pros-and-cons-of-using-immutability-with-react-js/" target="_blank">Pros and Cons of Using Immutability with React</a></li>
+</ul>
+<p><a id="react-rendering-too-often"></a></p>
+<h3 id="why-is-my-component-re-rendering-too-often">Why is my component re-rendering too often?</h3>
+<p>React Redux implements several optimizations to ensure your actual component only re-renders when actually necessary. One of those is a shallow equality check on the combined props object generated by the <code>mapStateToProps</code> and <code>mapDispatchToProps</code> arguments passed to <code>connect</code>. Unfortunately, shallow equality does not help in cases where new array or object instances are created each time <code>mapStateToProps</code> is called. A typical example might be mapping over an array of IDs and returning the matching object references, such as:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">const</span> mapStateToProps <span class="token operator">=</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    objects<span class="token punctuation">:</span> state<span class="token punctuation">.</span>objectIds<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>id <span class="token operator">=</span><span class="token operator">&gt;</span> state<span class="token punctuation">.</span>objects<span class="token punctuation">[</span>id<span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Even though the array might contain the exact same object references each time, the array itself is a different reference, so the shallow equality check fails and React Redux would re-render the wrapped component.</p>
+<p>The extra re-renders could be resolved by saving the array of objects into the state using a reducer, caching the mapped array using <a href="https://github.com/reactjs/reselect" target="_blank">Reselect</a>, or implementing <code>shouldComponentUpdate</code> in the component by hand and doing a more in-depth props comparison using a function such as <code>_.isEqual</code>. Be careful to not make your custom <code>shouldComponentUpdate()</code> more expensive than the rendering itself! Always use a profiler to check your assumptions about performance.</p>
+<p>For non-connected components, you may want to check what props are being passed in. A common issue is having a parent component re-bind a callback inside its render function, like <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Child</span> <span class="token attr-name">onClick</span><span class="token attr-value"><span class="token punctuation">=</span>{this.handleClick.bind(this)}</span> <span class="token punctuation">/&gt;</span></span></code>. That creates a new function reference every time the parent re-renders. It&#x2019;s generally good practice to only bind callbacks once in the parent component&#x2019;s constructor.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="http://stackoverflow.com/questions/34782249/can-a-react-redux-app-really-scale-as-well-as-say-backbone-even-with-reselect" target="_blank">Stack Overflow: Can a React Redux app scale as well as Backbone?</a></li>
+<li><a href="https://medium.com/@esamatti/react-js-pure-render-performance-anti-pattern-fb88c101332f" target="_blank">React.js pure render performance anti-pattern</a></li>
+<li><a href="http://benchling.engineering/deep-dive-react-perf-debugging/" target="_blank">A Deep Dive into React Perf Debugging</a></li>
+</ul>
+<p><a id="react-mapstate-speed"></a></p>
+<h3 id="how-can-i-speed-up-my-mapstatetoprops">How can I speed up my <code>mapStateToProps</code>?</h3>
+<p>While React Redux does work to minimize the number of times that your <code>mapStateToProps</code> function is called, it&#x2019;s still a good idea to ensure that your <code>mapStateToProps</code> runs quickly and also minimizes the amount of work it does. The common recommended approach is to create memoized &#x201C;selector&#x201D; functions using <a href="https://github.com/reactjs/reselect" target="_blank">Reselect</a>. These selectors can be combined and composed together, and selectors later in a pipeline will only run if their inputs have changed. This means you can create selectors that do things like filtering or sorting, and ensure that the real work only happens if needed.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="recipes/ComputingDerivedData.html">Recipes: Computed Derived Data</a></li>
+</ul>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/redux/issues/815" target="_blank">#815: Working with Data Structures</a></li>
+<li><a href="https://github.com/reactjs/reselect/issues/47" target="_blank">Reselect #47: Memoizing Hierarchical Selectors</a></li>
+</ul>
+<p><a id="react-props-dispatch"></a></p>
+<h3 id="why-dont-i-have-thispropsdispatch-available-in-my-connected-component">Why don&#x2019;t I have <code>this.props.dispatch</code> available in my connected component?</h3>
+<p>The <code>connect()</code> function takes two primary arguments, both optional. The first, <code>mapStateToProps</code>, is a function you provide to pull data from the store when it changes, and pass those values as props to your component. The second, <code>mapDispatchToProps</code>, is a function you provide to make use of the store&#x2019;s <code>dispatch</code> function, usually by creating pre-bound versions of action creators that will automatically dispatch their actions as soon as they are called.</p>
+<p>If you do not provide your own <code>mapDispatchToProps</code> function when calling <code>connect()</code>, React Redux will provide a default version, which simply returns the <code>dispatch</code> function as a prop. That means that if you <em>do</em> provide your own function, <code>dispatch</code> is <em>not</em> automatically provided.  If you still want it available as a prop, you need to explicitly return it yourself in your <code>mapDispatchToProps</code> implementation.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options" target="_blank">React Redux API: connect()</a></li>
+</ul>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://github.com/reactjs/react-redux/issues/89" target="_blank">React Redux #89: can i wrap multi actionCreators into one props with name?</a></li>
+<li><a href="https://github.com/reactjs/react-redux/issues/145" target="_blank">React Redux #145: consider always passing down dispatch regardless of what mapDispatchToProps does</a></li>
+<li><a href="https://github.com/reactjs/react-redux/issues/255" target="_blank">React Redux #255: this.props.dispatch is undefined if using mapDispatchToProps</a></li>
+<li><a href="http://stackoverflow.com/questions/34458261/how-to-get-simple-dispatch-from-this-props-using-connect-w-redux/34458710]" target="_blank">Stack Overflow: How to get simple dispatch from this.props using connect w/ Redux?</a></li>
+</ul>
+<p><a id="react-multiple-components"></a></p>
+<h3 id="should-i-only-connect-my-top-component-or-can-i-connect-multiple-components-in-my-tree">Should I only connect my top component, or can I connect multiple components in my tree?</h3>
+<p>Early Redux documentation advised that you should only have a few connected components near the top of your component tree.  However, time and experience has shown that that generally requires a few components to know too much about the data requirements of all their descendants, and forces them to pass down a confusing number of props.</p>
+<p>The current suggested best practice is to categorize your components as &#x201C;presentational&#x201D; or &#x201C;container&#x201D; components, and extract a connected container component wherever it makes sense:</p>
+<blockquote>
+<p>Emphasizing &#x201C;one container component at the top&#x201D; in Redux examples was a mistake. Don&#x2019;t take this as a maxim. Try to keep your presentation components separate. Create container components by connecting them when it&#x2019;s convenient. Whenever you feel like you&#x2019;re duplicating code in parent components to provide data for same kinds of children, time to extract a container. Generally as soon as you feel a parent knows too much about &#x201C;personal&#x201D; data or actions of its children, time to extract a container.</p>
+</blockquote>
+<p>In general, try to find a balance between understandable data flow and areas of responsibility with your components.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="basics/UsageWithReact.html">Basics: Usage with React</a></li>
+</ul>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0" target="_blank">Presentational and Container Components</a></li>
+<li><a href="https://twitter.com/dan_abramov/status/668585589609005056" target="_blank">Twitter: emphasizing &#x201C;one container&#x201D; was a mistake</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/419" target="_blank">#419: Recommended usage of connect</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/756" target="_blank">#756: container vs component?</a></li>
+<li><a href="https://github.com/reactjs/redux/issues/1176" target="_blank">#1176: Redux+React with only stateless components</a></li>
+<li><a href="http://stackoverflow.com/questions/34992247/can-a-dumb-component-use-render-redux-container-component" target="_blank">Stack Overflow: can a dumb component use a Redux container?</a></li>
+</ul>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<p><a id="miscellaneous-real-projects"></a></p>
+<h3 id="are-there-any-larger-real-redux-projects">Are there any larger, &#x201C;real&#x201D; Redux projects?</h3>
+<p>The Redux &#x201C;examples&#x201D; folder has several sample projects of varying complexity, including a &#x201C;real-world&#x201D; example. While many companies are using Redux, most of their applications are proprietary and not available. A large number of Redux-related projects can be found on Github, such as <a href="https://github.com/andrewngu/sound-redux" target="_blank">SoundRedux</a>.</p>
+<h4 id="further-information">Further information</h4>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="introduction/Examples.html">Introduction: Examples</a></li>
+</ul>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://www.reddit.com/r/reactjs/comments/496db2/large_open_source_reactredux_projects/" target="_blank">Reddit: Large open source react/redux projects?</a></li>
+<li><a href="https://news.ycombinator.com/item?id=10710240" target="_blank">HN: Is there any huge web application built using Redux?</a></li>
+</ul>
+<p><a id="miscellaneous-authentication"></a></p>
+<h3 id="how-can-i-implement-authentication-in-redux">How can I implement authentication in Redux?</h3>
+<p>Authentication is essential to any real application. When going about authentication you must keep in mind that nothing changes with how you should organize your application and you should implement authentication in the same way you would any other feature. It is relatively straightforward:</p>
+<ol>
+<li><p>Create action constants for <code>LOGIN_SUCCESS</code>, <code>LOGIN_FAILURE</code>, etc.</p>
+</li>
+<li><p>Create action creators that take in credentials, a flag that signifies whether authentication succeeded, a token, or an error message as the payload.</p>
+</li>
+<li><p>Create an async action creator with Redux Thunk middleware or any middleware you see fit to fire a network request to an API that returns a token if the credentials are valid. Then save the token in the local storage or show a response to the user if it failed. You can perform these side effects from the action creators you wrote in the previous step.</p>
+</li>
+<li><p>Create a reducer that returns the next state for each possible authentication case (<code>LOGIN_SUCCESS</code>, <code>LOGIN_FAILURE</code>, etc).</p>
+</li>
+</ol>
+<h4 id="further-information">Further information</h4>
+<p><strong>Discussions</strong></p>
+<ul>
+<li><a href="https://auth0.com/blog/2016/01/04/secure-your-react-and-redux-app-with-jwt-authentication/" target="_blank">Authentication with JWT by Auth0</a></li>
+<li><a href="https://medium.com/@MattiaManzati/tips-to-handle-authentication-in-redux-2-introducing-redux-saga-130d6872fbe7" target="_blank">Tips to Handle Authentication in Redux</a></li>
+<li><a href="https://github.com/joshgeller/react-redux-jwt-auth-example" target="_blank">react-redux-jwt-auth-example</a></li>
+<li><a href="https://github.com/lynndylanhurley/redux-auth" target="_blank">redux-auth</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+    
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+
+    
+    <div class="powered-by-algolia">
+        powered by <a href="https://algolia.com" target="_blank"><img src="gitbook/gitbook-plugin-algolia/algolia-logo.jpg" /></a>
+    </div>
+    
+
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="docs/recipes/IsolatingSubapps.md" class="navigation navigation-prev " aria-label="Previous page: 서브앱 분리하기(미번역)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Troubleshooting.html" class="navigation navigation-next " aria-label="Next page: 문제해결(미번역)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"FAQ(미번역)","level":"1.6","depth":1,"next":{"title":"문제해결(미번역)","level":"1.7","depth":1,"path":"Troubleshooting.md","ref":"Troubleshooting.md","articles":[]},"previous":{"title":"서브앱 분리하기(미번역)","level":"1.5.8","depth":2,"path":"docs/recipes/IsolatingSubapps.md","ref":"docs/recipes/IsolatingSubapps.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","anchorjs","algolia"],"root":"./docs_kr","styles":{"website":"build/gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/reactjs/redux/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"algolia":{"freeAccount":"false","index":"redux-docs","applicationID":"BC2QB3G2G4","publicKey":"75eb88bb56d8cf8d17b6366a2c8e5fcd"},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/dobbit/redux/tree/master"},"theme-default":{"styles":{"website":"build/gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Redux","language":"ko","gitbook":">=3.2.1"},"file":{"path":"FAQ.md","mtime":"2017-01-11T07:33:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-11T08:36:56.782Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-algolia/search-algolia.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
